@@ -1,0 +1,68 @@
+<link href="/CSS/table.css" rel="stylesheet" />
+<div class="para">Art details</div>
+<% var Length = detail.length%>
+    <% if(Length!=0) { %>
+        <table>
+            <thead>
+                <tr class="firstt">
+                    <th scope="col" class="firstt">Art Title</th>
+                    <th scope="col" class="firstt">Art_Type</th>
+                    <th scope="col" class="firstt">Year</th>
+                    <th scope="col" class="firstt">Price</th>
+                </tr>
+            </thead>
+
+            <tbody class="firstt">
+                <tr class="firstt">
+                    <td class="firstt">
+                        <%= detail[0].title %>
+                    </td>
+                    <td class="firstt">
+                        <%= detail[0].Art_type %>
+                    </td>
+                    <td class="firstt">
+                        <%= detail[0].year %>
+                    </td>
+                    <td class="firstt">
+                        <%= detail[0].price %>
+                    </td>
+                </tr>
+                <br>
+            </tbody>
+        </table>
+
+
+        <!-- ///////
+        <div class="card" style="width: 18rem">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Title
+                    <%= detail[0].title %>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card" style="width: 18rem">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">type
+                    <%= detail[0].Art_type %>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card" style="width: 18rem">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Year
+                    <%= detail[0].year %>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card" style="width: 18rem">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Price
+                    <%= detail[0].price %>
+                </li>
+            </ul>
+        </div>
+
+        <% } %> -->

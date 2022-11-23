@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/utils.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="CSS/mobile.css">
+    <title>Document</title>
+</head>
+
+<script>
+    function myfunc() {
+        document.getElementById('frm').submit();
+    }
+</script>
+
+
+<body>
+    <nav class="navigation max-width-1 margin-auto">
+        <div class="nav-left">
+            <b>Exhibition</b>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/EXplace">place</a></li>
+                <li><a href="/Signin">Signin</a></li>
+                <li><a href="#">about</a></li>
+            </ul>
+        </div>
+
+
+        <div class="nav-right ">
+            <form method="post" action="/searchArt">
+                <input type="text" class="form-input" id="textarea" name="title" placeholder="Search Art">
+                <button class="button-71">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="max-width-1 margin-auto">
+        <hr>
+    </div>
+
+    <div class="contact-content">
+
+        <form method="post" action="/insertEx">
+            <div class="home-articles max-width-1 margin-auto font2">
+                <h2>Enter Exhibition Information</h2>
+                <div class="contact-form">
+                    <div class="form-box">
+                        <input type="text" name="place" placeholder="Enter  Place">
+                    </div>
+
+                    <div class="form-box">
+                        <input type="text" name="SD" placeholder="Enter Start Date">
+                    </div>
+
+                    <div class="form-box">
+                        <input type="text" name="ED" placeholder="Enter End Date">
+                    </div>
+
+                    <div class="form-box">
+                        <button class="button-71" type="submit">Submit</button>
+                    </div>
+                </div>
+
+        </form>
+
+        </div>
+
+        <div class="contact-content">
+
+            <form method="post" action="/ArtExPlace">
+                <div class="home-articles max-width-1 margin-auto font2">
+                    <h2 style="text-align: center">Find Arts at particular Exhibition Place</h2>
+                    <h2> Enter Exhibition Place Information</h2>
+                    <div class="contact-form">
+                        <div class="form-box">
+                            <input type="text" name="place" placeholder="Enter  Place">
+                        </div>
+
+                        <div class="form-box">
+                            <button class="button-71" type="submit">Submit</button>
+                        </div>
+                    </div>
+
+            </form>
+
+            </div>
+</body>
+
+
+</html>

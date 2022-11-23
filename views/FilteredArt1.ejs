@@ -1,0 +1,23 @@
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" /> -->
+<!-- <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet" /> -->
+<link href="/CSS/table.css" rel="stylesheet" />
+<div class="para">Arts list for entered place</div>
+<% var Length = Art.length%>
+    <table>
+        <thead>
+            <tr class="firstt">
+                <th scope="col" class="firstt">Art Title</th>
+            </tr>
+        </thead>
+        <% for(var i=0; i<Length; i++){ %>
+
+            <tbody class="firstt">
+                <tr class="firstt">
+                    <td class="firstt">
+                        <%= Art[i].title %>
+                    </td>
+                </tr>
+                <br>
+            </tbody>
+            <% } %>
+    </table>

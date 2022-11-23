@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/utils.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="CSS/mobile.css">
+    <title>Document</title>
+</head>
+
+<script>
+    function myfunc() {
+        document.getElementById('frm').submit();
+    }
+</script>
+
+<body>
+    <nav class="navigation max-width-1 margin-auto">
+        <div class="nav-left">
+            <b>Sign In</b>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/Signin">Signin</a></li>
+                <li><a href="#">about</a></li>
+            </ul>
+        </div>
+
+
+        <div class="nav-right ">
+            <form method="post" action="/searchArt">
+
+                <input type="text" class="form-input" id="textarea" name="title" placeholder="Search Art">
+                <button class="button-71">Search</button>
+            </form>
+
+
+        </div>
+    </nav>
+
+    <div class="max-width-1 margin-auto">
+        <hr>
+    </div>
+
+    <div class="contact-content">
+        <div class="home-articles max-width-1 margin-auto font2">
+            <h2>Enter your Details here</h2>
+
+            <form method="post" id="frm" action="/insertUser">
+                <div class="contact-form">
+
+                    <div class="form-box">
+                        <input type="text" name="name" id="name" placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-box">
+                        <input type="text" name="address" placeholder="Enter your address">
+                    </div>
+
+                    <div class="form-box">
+                        <input type="text" name="email" placeholder="Enter your email">
+                    </div>
+
+                    <div class="form-box">
+                        <input type="date" name="DOB" placeholder="Enter your Date of Birth">
+                    </div>
+
+                    <div class="form-box">
+                        <input type="text" name="gender" placeholder="Enter your gender">
+                    </div>
+
+                    <div class="form-box">
+                        <input type="text" name="password" placeholder="Enter your password">
+                    </div>
+
+                    <div class="form-box">
+                        <button class="button-71" onclick="myfunc();"> Submit </button>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
+    </div>
+
+</body>
+
+
+
+</html>

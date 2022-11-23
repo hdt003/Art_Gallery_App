@@ -1,0 +1,26 @@
+.contact-content {
+    padding: 10px;
+    height: 100vh;
+    overflow: hidden;
+    /* background-color: rgb(138, 138, 255); */
+}
+
+.contact-content::after {
+    content: "";
+    background-image: url('IMG/Arts.jpg');
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.15;
+    z-index: -1;
+}
+
+.form-box input,
+textarea {
+    width: 50vw;
+    padding: 10px 7px;
+    margin: 7px 0px;
+    font-family: var(--font2);
+    border: 2px solid rgb(12, 59, 248);
+    border-radius: 5px;
+}
